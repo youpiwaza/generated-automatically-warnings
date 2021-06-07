@@ -11,16 +11,16 @@ Example for markdown.md files:
 > 🤖 This file has been generated automatically through Ansible and **should not be edited by hand**.
 > See the [original script](https://hey.com)
 > & [original template file](https://hey.com).
-> *Generated (yyyy-mm-dd) {{ currentTimestamp }}*.
+> *Generated (yyyy-mm-dd) {{ currentDateTime }}*.
 
 ---
 
-^ Adapt ansible role/task to generate currentTimestamp:
+^ Adapt ansible role/task to generate current date & time:
 
 ```yml
 - name: Generate dat file
   vars:
-    currentTimestamp: "{{ lookup('pipe', 'date +%Y-%m-%d--%Hh%Mm%Ss') }}"
+    currentDateTime: "{{ lookup('pipe', 'date +%Y-%m-%d--%Hh%Mm%Ss') }}"
   template:
     dest: './README-generated-{{ currentDateTime }}.md'
     src: templates/README.md.j2
