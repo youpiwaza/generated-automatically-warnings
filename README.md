@@ -31,8 +31,8 @@ Ready to copy/paste.
 ```ini
 ##---
 ## 🤖 This file has been generated automatically through Ansible and **should not be edited by hand**.
-## See the [original script](https://github.com/youpiwaza/ansible-install-web-server/blob/master/ansible/roles/docker-swarm-installation/tasks/test-curated-swarm-service.yml)
-## & [original template file](https://github.com/youpiwaza/ansible-install-web-server/blob/master/ansible/roles/docker-swarm-installation/templates/nginx-custom-user.conf.j2).
+## See the [original script](https://hey.com)
+## & [original template file](https://hey.com).
 ## *Generated (yyyy-mm-dd) {{ currentDateTime }}*.
 ##---
 ```
