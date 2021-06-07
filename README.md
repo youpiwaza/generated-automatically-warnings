@@ -4,7 +4,7 @@ Various string templates warnings, depending of the language used.
 
 Ready to copy/paste.
 
-Example for markdown.md files:
+## markdown.md files
 
 ---
 
@@ -24,4 +24,15 @@ Example for markdown.md files:
   template:
     dest: './README-generated-{{ currentDateTime }}.md'
     src: templates/README.md.j2
+```
+
+## .conf / .ini files
+
+```ini
+##---
+## 🤖 This file has been generated automatically through Ansible and **should not be edited by hand**.
+## See the [original script](https://github.com/youpiwaza/ansible-install-web-server/blob/master/ansible/roles/docker-swarm-installation/tasks/test-curated-swarm-service.yml)
+## & [original template file](https://github.com/youpiwaza/ansible-install-web-server/blob/master/ansible/roles/docker-swarm-installation/templates/nginx-custom-user.conf.j2).
+## *Generated (yyyy-mm-dd) {{ currentDateTime }}*.
+##---
 ```
